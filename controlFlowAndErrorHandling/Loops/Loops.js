@@ -206,4 +206,26 @@ for(worker of officeCharacters){
 if(worker === 'Jim' && worker !== 'Dwight'){
     console.log('Bear. Beets. Battlestar Galactica.');
 }
-}
+}/*
+ CHALLENGE:
+
+ Write a for loop that counts from 1 to 100
+  - for numbers that are evenly divisable by 3, print: 'FIZZ'
+  - for numbers that are evenly divisable by 5, print: 'BUZZ'
+  - for numbers that are evenly divisible by BOTH 3 and 5, print: 'FIZZ BUZZ'
+
+ reminder: a number is evenly divisible by another nubmer when the remainder is 0;
+
+*/
+
+let output = "" 
+for(let i = 1; i <= 100; i++) { 
+   if(i % 3 == 0 && i % 5 == 0) { 
+      output += i + " Fizz Buzz, " 
+   } else if(i % 3 == 0) {  
+      output += i + " Fizz, " 
+   } else if(i % 5 == 0) { 
+      output += i + " Buzz, " 
+   } 
+} 
+console.log(output) 

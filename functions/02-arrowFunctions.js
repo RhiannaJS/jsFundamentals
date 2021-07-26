@@ -103,3 +103,27 @@ let shoot = (x, y) => {
 }
 }
 shoot(hero, knock)
+
+let num;
+let r;
+
+let callback = (num) => {
+    
+    if(typeof num !== 'number'){
+      return `what is this?`
+    } 
+    else if (num === 0){
+      return `the number is even`;
+  } else if ( num % 2 === 0) {
+    return`the number is even`;
+  } else {
+      return `the number is odd`
+  }
+  }
+
+  for(let num = 0; num <= 10; num++)
+    console.log(callback(num))
+  
+ 
+  
+
