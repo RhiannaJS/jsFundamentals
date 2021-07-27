@@ -150,3 +150,40 @@ let testObj = {
 console.log(testObj.noSpaces);
 console.log(testObj['Spaces Here']);
 
+const movieChallenge = {
+    nameOfMovie: 'Pulp-Fiction',
+    runTime: 180,
+    genre: 'Mafia',
+    characters: [
+      {
+      name: 'Vincent Vega',
+      age: 35,
+      items: ['gun', 'Marsellace Wallus Soul', 'wallet'],
+      },
+      {
+      name: `Mia Wallace`,
+      age: 32,
+      items: ['Heroin', '$5 shake', 'purse'],
+      }
+    ]
+    }
+    console.log(movieChallenge.characters);
+
+    const movieChallenge = {
+        nameOfMovie: 'Pulp-Fiction',
+        runTime: 180,
+        genre: 'Mafia',
+        characters: [
+          {
+          name: 'Vincent Vega',
+          age: 35,
+          items: 'gun, Marsellace Wallus Soul, wallet',
+          },
+          {
+          name: 'Mia Wallace',
+          age: 32,
+          items: 'Heroin,  $5 shake, purse',
+          }
+        ]
+        }
+    
