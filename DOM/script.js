@@ -50,10 +50,10 @@ console.log(document.getElementById('spanTest').innerHTML);
 
 // ! addEventListener() (event, callback function)
 
-document.getElementById('clickThis').addEventListener('click', function(event){
-    console.log(event);
-    console.log(event.target.style.backgroundColor='#031BFE');
-})
+//  document.getElementById('clickThis').addEventListener('click', function(event){
+//      console.log(event);
+//      console.log(event.target.style.backgroundColor='#031BFE');
+//  })
 
 //  ! addEventListener - keyup
 
@@ -70,3 +70,37 @@ if (e.target.value === ''){
     document.getElementsByTagName('p')[1].innerText =`Everyone say hello to ${e.target.value}`;
 }
 })
+
+// document.getElementById('clickThis').addEventListener('click', function(event){
+//     console.log(event);
+//     console.log(event.target.style.backgroundColor='#FE0703');
+// })
+
+//  document.getElementById('clickThis').addEventListener('click', function(event){
+//      console.log(event);
+//      console.log(event.target.style.backgroundColor='#031BFE')
+//  }
+
+// CHALLENGE
+// 1.  move the button into a variable
+// 2. click it, and it will turn blue
+// 3. if it is blue, turn red
+
+let button = document.getElementById('clickThis');
+
+button.addEventListener('click', ev => {
+    console.log(ev.target.style.backgroundColor);
+//     if(ev.target.style.backgroundColor =='blue'){
+//         ev.target.style.backgroundColor = 'red';
+//     } else {
+//         ev.target.style.backgroundColor = 'blue';
+//     }   
+// })
+
+if(ev.target.style.backgroundColor !== 'blue'){
+    ev.target.style.backgroundColor = 'blue';
+} else {
+    ev.target.style.backgroundColor = 'red';
+}
+})
+
