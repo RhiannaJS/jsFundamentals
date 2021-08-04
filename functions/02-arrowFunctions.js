@@ -1,18 +1,18 @@
 /*
-ARROW FUNCTIONS
-
- - arrow functions are expressional functions that can be simplified into one of two forms: concise body and Block body.  The main goal is to generate shorter syntax for writing a function.
+I. ARROW FUNCTIONS
+    A. arrow functions are expressional functions that can be simplified into one of two forms: concise body and Block body.  The main goal is to generate shorter syntax for writing a function.
 */
 
-//Regular Function
+        //Regular Function
 
 function regFunc(){
     console.log('just a regular function');
 }
 regFunc();
 
-//ARROW FUNCTION
-//    (1)       (2)          (4)
+/*ARROW FUNCTION
+
+      (1)       (2)          (4)
 let arrowFunc = () => console.log('function in one line');
 arrowFunc();
 
@@ -27,6 +27,14 @@ arrowFunc();
 
 let arrow = (x) => console.log(x);
 arrow(10);
+
+let person = (x, y) => console.log(x, y);
+person('Jane' + 'Doe')
+
+function customer(x,y){
+    console.log(x, y);
+}
+customer('Jane', 'Doe')
 
 //! CONCISE vs BLOCK BODY
 // CONCISE BODY
@@ -123,7 +131,6 @@ let callback = (num) => {
 
   for(let num = 0; num <= 10; num++)
     console.log(callback(num))
-  
- 
-  
+
+
 

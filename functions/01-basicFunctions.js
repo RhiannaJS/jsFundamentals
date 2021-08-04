@@ -1,11 +1,10 @@
 /*
-FUNCTIONS
-
-Functions are processes that we call upon to run an action.  *A variable that does something*
-    They can do the following:
-     - Take in an input to process, modify, or respond to (not required)
-     - Return a value (not required)+
-     - Can be invoked (or called) as often as needed
+I.FUNCTIONS
+    A. Functions are processes that we call upon to run an action.  *A variable that does something*
+    B. They can do the following:
+     1. Take in an input to process, modify, or respond to (not required)
+     2. Return a value (not required)+
+     3. Can be invoked (or called) as often as needed
 */
 
 // (1)    (2)
@@ -79,9 +78,8 @@ function funcOne() {
 funcOne();//we invoke (or call) a function by writing it's declared name followed by ()
 
 /*
-FUNCTION EXPRESSIONS
-
-assigning a function to a variable is what we call an expression!
+II.FUNCTION EXPRESSIONS
+    A. assigning a function to a variable is what we call an expression!
 */
 
 let first = function funcTwo() {
@@ -99,10 +97,9 @@ console.log(typeof example);//function
 console.log(typeof example());//undefined
 
 /*
-ANONYMOUS FUNCTIONS
-
- - anonymous functions are stored in memory but the runtime does not automatically create a       reference to it.
- - the main use wdould be to pass these fuctions through another functions.  Maybe have aternary where if something is true we run on  functions, else we run a different function.
+III. ANONYMOUS FUNCTIONS
+    A.anonymous functions are stored in memory but the runtime does not automatically create a reference to it.
+    B.the main use would be to pass these fuctions through another functions.  Maybe have a ternary where if something is true we run our  functions, else we run a different function.
 */
 
 // Common use would be to assign these to a variable
@@ -116,14 +113,10 @@ anon();
 //      .then(function(response)) { response.json() })
 
 /*
-PARAMETERS
-
-We will be using fuctions to pass in information and return a result
-
-Parameters will allow our function to take in outside information
+IV. PARAMETERS
+    A. We will be using fuctions to pass in information and return a result
+    B. Parameters will allow our function to take in outside information
 */
-
-
 
 //return will essentially set the function = to something
 
@@ -156,3 +149,7 @@ greeting();
 greeting(firstName, lastName);
 greeting(firstName, null);
 greeting('', lastName);
+
+
+
+

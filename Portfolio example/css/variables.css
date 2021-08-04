@@ -1,0 +1,24 @@
+/* We can use something called CSS variables that allow us to declare custom properties, that we can then call in our other CSS files.  Once we figure out a color scheme (or any other preset properties that we would like to use) we can use custom properties to create CSS variables.  This saves us time later when we want to access a specific color or another property.*/
+
+:root {
+    --red: #e80d0d;
+    --orange: #f98500;
+    --yellow: #ffc600;
+    --green: #10a503;
+    --blue-green: #0ed6a4;
+    --blue: #031BFE;
+    --purple: #6a00b2;
+    --brown: #6d6656;
+    --grey: #53565a;
+    --black: #272727;
+    
+    --font-one: "Courgette', cursive";
+    --font-two: "Poppins', sans-serif";
+    --font-three: "vogue";
+}
+
+@font-face{
+    font-family: "vogue";
+    src: url("../assets/img/Vogue.ttf");
+    font-weight: bolder;
+}

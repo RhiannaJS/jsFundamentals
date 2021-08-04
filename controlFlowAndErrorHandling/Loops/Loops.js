@@ -229,3 +229,145 @@ for(let i = 1; i <= 100; i++) {
    } 
 } 
 console.log(output) 
+
+let crazy = ''
+for(let i=0; i<=100; i++){
+    if(i % 6 == 0 && i % 8==0){
+        console.log('Fizz Buzz')
+    } else if(i  % 6 ==0){
+        console.log('Fizz')
+    } else if(i % 8==0){
+        console.log('Buzz')
+            }
+            }
+        
+console.log(crazy)
+
+function findPerimeter(length, width){
+    let x = length * 2 +  width * 2;
+    if (x > 20) {
+        console.log(`True. The perimeter is ${x}.`)
+    } else {
+        console.log(`False. The perimeter is ${x}.`)
+    }
+}
+    findPerimeter(5, 6)
+
+    let person = (x,y) => console.log(x,y);
+    person('Joe', 'Smith');
+
+    person();
+
+for(let x = 0; x <=100; x++){
+    if(x % 6 == 0 && x % 8 == 0){
+        console.log('Fizz Buzz')
+    } else {
+        if(x % 6 == 0){
+            console.log('Fizz')
+            } else {
+                if(x % 8 == 0){
+                    console.log ('Buzz')
+                }
+            }
+        }
+    }
+    /*
+  CHALLENGE:
+  Write a for loop that counts from 1 to 100
+    - for numbers that are evenly divisible by 3, print: 'FIZZ'
+    - for numbers that are evenly divisible by 5, print: 'BUZZ'
+    - for numbers that are evenly divisible by BOTH 3 and 5, print: 'FIZZ BUZZ'
+  reminder: a number is evenly divisible by another number when the remainder is 0
+*/
+for(let i = 0; i <= 100; i++) {
+    console.log(i)
+    if(i % 3 == 0) {
+      console.log('FIZZ');
+    }
+    if(i % 5 == 0) {
+      console.log('BUZZ');
+    }
+  }
+  for(let k = 1; k <= 100; k++) {
+    // if(k % 3 == 0 && k % 5 == 0) {
+    if(k % 15 == 0) {
+      console.log('FIZZ BUZZ');
+    } else if(k % 3 == 0) {
+      console.log('FIZZ');
+    } else if(k % 5 == 0) {
+      console.log('BUZZ');
+    } else {
+      console.log(k);
+    }
+  }
+  let func = (x,y) => console.log(x,y);
+  func('peoples', 'names');
+  function writtenOutOne(x, y) {
+      console.log(x, y)
+  }
+  writtenOutOne('person1', 'person2');
+  for(let x = 0; x <= 100; x++){
+      // if(x % 24 == 0){
+    if(x % 6 == 0 && x % 8 == 0) {
+          console.log(x,'FIZZ BUZZ')
+      } else if(x % 6 == 0) {
+          console.log(x,'FIZZ')
+      } else if(x % 8 == 0) {
+          console.log(x,'BUZZ')
+      } else {
+          console.log(x)
+      }
+  }
+  function findPerimeter(length, width){
+    let x = length *2 + width * 2 ;
+    if (x > 20){
+    console.log(`True.  The perimeter is ${x}`)
+    } else {console.log(`False. The perimeter is ${x}`)
+    }
+  }
+    findPerimeter(5, 5.1);
+  let library = {
+      name: 'string i guess',
+      address: 'strings in there',
+      sections: {
+          collections: [
+              {
+                  classification: 'one',
+                  count: 2,
+                  aisle: 'value for it',
+              },
+              {
+                  classification: 'two',
+                  count: 3,
+                  aisle: 'value for it',
+              }
+          ]
+      }
+  }
+  console.log(library)
+  console.log(library.sections.collections)
+
+  
+
+  function greeting = (x,y) => console.log(x,y)
+  greeting('George', 'Clinton’)
+  
+
+  for(let x=0; x<=100; x++){
+    if(x % 3==0 && x % 5 == 0){
+    console.log('Fizz Buzz');
+    } else { if (x % 3 == 0) 
+    console.log('Fizz');
+    } else { if (x % 5 == 0); 
+    console.log('Buzz')}
+    }
+    
+
+    function isRightTriangle(a,b,c){
+        if(c**2 = a**2 + b**2){
+            return('True')
+        } else { return('False’)}
+        
+        isRightTriangle(3, 4, 25) 
+        isRightTriangle(3, 2, 25)
+        

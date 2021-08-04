@@ -1,0 +1,9 @@
+.navbar-brand{
+    font-family: var(--font-one);
+    font-size: 24pt;
+}
+
+.nav-link{
+    color: var(--grey);
+    
+}
