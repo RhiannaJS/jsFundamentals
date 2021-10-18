@@ -15,7 +15,7 @@ III. Object Destructuring
 */
 
 const boardGames=['Catan', 'Monopoly', 'Clue']
-// console.log(boardGames[0])
+console.log(boardGames[0])
 
 // array destructuring syntax (can also use let)
 const [gameOne, gameTwo, gameThree] = boardGames;

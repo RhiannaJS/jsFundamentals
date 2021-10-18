@@ -65,8 +65,8 @@ console.log('push:', food);
 // Method to remove from an array
 
 let food=['Pecan Pie', 'Shrimp', 'Quesadilla', 'Cheese Cake', 'Hotdog'];
-food.push('Pizza', 'Spring Onion'); //.push will add a value to the end of the array
-//console.log(food.push('Spring Onion'));//gives me length of the array
+// food.push('Pizza', 'Spring Onion'); //.push will add a value to the end of the array
+console.log(food.push('Spring Onion'));//gives me length of the array
 console.log('push:', food);
 food.pop();//should remove the last item from the array
 console.log('pop:', food);
@@ -109,7 +109,7 @@ ITERATING
 
 forEach-
     - the forEach() method executes a provided function once for each element in an array
-    - the forEach() method does the same thing as a for loop or a for of loop - both iterate ove the properties in an array
+    - the forEach() method does the same thing as a for loop or a for of loop - both iterate over the properties in an array
     - when using a forEach() we will provide a callback function that has up to 3 argument:
     1. The value.
     2. The index.

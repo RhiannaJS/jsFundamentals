@@ -7,7 +7,7 @@ function nextPage(){
 }
 
 function previousPage(){
-    console.log("Next button clicked");
+    console.log("Previous button clicked");
 }
 
 

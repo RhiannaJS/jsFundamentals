@@ -45,6 +45,7 @@ let netflix ={
         }
     }
 }
+
 console.log('All data:', netflix);
 console.log('Just season info:', netflix.season1.seasonInfo);
 console.log(`Episode ${netflix.season1.seasonInfo.episodeInfo[4].episode}:`, netflix.season1.seasonInfo.episodeInfo[1].episodeName)
@@ -103,7 +104,7 @@ console.log(Object.values(spaceJam.toonSquad));
 /*
 OBJECT BRACKET NOTATION
 
- - Object Bracket Notation can allow us to find a value in an objec we wouldn't be able to access using dot notation.
+ - Object Bracket Notation can allow us to find a value in an object we wouldn't be able to access using dot notation.
  - we can also use OBJECT BRACKET NOTATION to store a key in a variable and use that variable to access information in an object.
  -this works because all key names in an object are strings
 */
