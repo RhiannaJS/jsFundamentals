@@ -49,6 +49,7 @@ let netflix ={
 console.log('All data:', netflix);
 console.log('Just season info:', netflix.season1.seasonInfo);
 console.log(`Episode ${netflix.season1.seasonInfo.episodeInfo[4].episode}:`, netflix.season1.seasonInfo.episodeInfo[1].episodeName)
+console.log(netflix.name)
 
 /*
 CHALLENGE

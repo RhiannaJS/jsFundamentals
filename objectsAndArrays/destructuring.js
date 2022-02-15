@@ -14,8 +14,45 @@ III. Object Destructuring
     A. First we need an OBJECT
 */
 
-const boardGames=['Catan', 'Monopoly', 'Clue']
+const boardGames = ['Catan', 'Monopoly', 'Clue']
 console.log(boardGames[0])
+
+let recs = [
+    {
+        ID: 1,
+        NAME: "John",
+        EMAIL: "john@example.com",
+        SSN: "123",
+    },
+    {
+        ID: 2,
+        NAME: "Sally",
+        EMAIL: "sally@example.com",
+        SSN: "456"
+    },
+    {
+        ID: 3,
+        NAME: "Angie",
+        EMAIL: "angie@example.com",
+        SSN: "789"
+    }
+];
+
+// console.log(recs.user1.ID, recs.user1.NAME, recs.user1.EMAIL)
+
+recsMap = () => {
+    return recs.map(() => {
+        return(
+        recs[0].ID, recs[0].NAME, recs[0].EMAIL, recs[1].ID, recs[1].NAME, recs[1].EMAIL, recs[2].ID, recs[2].NAME, recs[2].EMAIL
+        )}
+        )    
+}
+
+console.log (recsMap())
+
+console.log(recs[0].ID, recs[0].NAME, recs[0].EMAIL, recs[1].ID, recs[1].NAME, recs[1].EMAIL, recs[2].ID, recs[2].NAME, recs[2].EMAIL)
+
+
 
 // array destructuring syntax (can also use let)
 const [gameOne, gameTwo, gameThree] = boardGames;
@@ -26,9 +63,10 @@ console.log(gameThree);
 
 // REST OPERATOR
 const hitchhikersGuide = ['Arthur Dent', 'Trillian', 'Babel Fish', {
-    day: 'Thursday', answer: 42}]
+    day: 'Thursday', answer: 42
+}]
 
-let [charOne, charTwo,...otherInfo] = hitchhikersGuide;
+let [charOne, charTwo, ...otherInfo] = hitchhikersGuide;
 console.log(charOne);
 console.log(charTwo);
 console.log(otherInfo);
@@ -40,7 +78,7 @@ console.log(firstName, secondName, thirdName)
 let [first, second, ...mainCharacters] = harryPotter;
 console.log(first, second, mainCharacters);
 
-let [ , , ...mainCharacters] = harrypotter;
+let [, , ...mainCharacters] = harrypotter;
 console.log(mainCharacters)
 
 // OBJECT DESTRUCTURING
@@ -51,33 +89,34 @@ const game = {
     platforms: ['Nintendo Switch', 'Wii U']
 }
 
-const {title, developer, platform} = game; //must be specific keys we want from the object//
+const { title, developer, platform } = game; //must be specific keys we want from the object//
 console.log(title);
 console.log(developer);
 console.log(platforms);
 
-const games=[
-    {title: 'Legend of Zelda: Breath of the Wild',
-    developer: 'Nintendo',
-    platforms: ['Nintendo Switch', 'Wii U']
+const games = [
+    {
+        title: 'Legend of Zelda: Breath of the Wild',
+        developer: 'Nintendo',
+        platforms: ['Nintendo Switch', 'Wii U']
     },
     {
-    title: 'Bloodborne',
-    developer: 'From Software',
-    platforms: ['PS4']
+        title: 'Bloodborne',
+        developer: 'From Software',
+        platforms: ['PS4']
     },
     {
-    title: 'Stardew Valley',
-    developer: 'ConcernedApe',
-    platforms: ['PC', 'macOS', 'Linux', 'PS4', 'Xbox One', 'Nintendo', 'Switch', 'PSVita', 'iOS', 'Android']
+        title: 'Stardew Valley',
+        developer: 'ConcernedApe',
+        platforms: ['PC', 'macOS', 'Linux', 'PS4', 'Xbox One', 'Nintendo', 'Switch', 'PSVita', 'iOS', 'Android']
     }
 ];
 
-const [{title: gameOne, developer: devOne}, gameTwo, {title: gameThree}] = games
+const [{ title: gameOne, developer: devOne }, gameTwo, { title: gameThree }] = games
 console.log(gameOne, devOne)
 console.log(gameTwo)
 console.log(gameThree)
 
-for(let {title, developer} of games){
+for (let { title, developer } of games) {
     console.log(`${title} is developed by ${developer}.`);
 }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=>">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="nameInput">Enter Your Name:</label>
+    <input type="text" id="nameInput" placeholder="John Smith" />
+
+    <p>Welcome!</p>
+    <p>No name has been entered</p>
+
+    <button id="clickThisButton">I want to be clicked</button>
+    <p id="testParagraph">sample text</p>
+    <p class="sampleClass">This paragraph has a class of "sampleClass"</p>
+    <h1>Hello World</h1>
+
+    <script type="text/javascript">
+
+        document.getElementById("nameInput").addEventListener("keyup", (event) => {
+            if (event.target.value === "") {
+                document.getElementByTagName("p")[1].innerText = `No name has been entered`;
+            } else {
+                document.getElementsByTagName("p")[1].innerText = `Everyone please welcome ${event.target.value} to the stage.`;
+            }
+        });
+
+        // document.getElementById("nameInput").addEventListener("keyup", (event) => {
+        //     console.log(event.target.value);
+        //     console.log(document.getElementsByTagName("p"));
+        // });
+
+        // document.getElementById("nameInput").addEventListener("keyup", (event) => {
+        //     console.log(event);
+        // });
+
+        // document.getElementById("clickThisButton").addEventListener("click", (details) => {
+        //     details.target.style.backgroundColor="red";
+        // });
+        // console.log(document.querySelectorAll("p.sampleClass"));
+        // document.querySelectorAll("p.sampleClass")[0].innerHTML = "<span>I am a whole new element!</span>";
+        // document.querySelectorAll("p.sampleClass")[0].innerText = "My text was changed!"
+        // document.getElementById("testParagraph").style.color = "blue";
+        // console.log(document.getElementById("testParagraph").style.color);
+        // var x = 10;
+        // console.log(x);
+    </script>
+</body>
+
+</html>

@@ -146,3 +146,90 @@ colorList.forEach((item, index) => {
     console.log(index);
 })
 
+// .splice()
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// At position 2, add 2 elements: 
+fruits.splice(2, 0, "Lemon", "Kiwi");
+console.log(fruits)
+
+const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
+
+// At position 2, remove 2 items: 
+fruits.splice(2, 2);
+console.log(fruits)
+
+// .concat()
+const arr1 = ["Cecilie", "Lone"];
+const arr2 = ["Emil", "Tobias", "Linus"];
+
+const children = arr1.concat(arr2); 
+console.log(children)
+
+// .copyWithin()
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.copyWithin(2, 0);
+console.log(fruits)
+
+const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
+fruits.copyWithin(2, 0, 2);
+console.log(fruits)
+
+// .entries()
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const f = fruits.entries();
+console.log(f)
+
+// .indexOf()
+const fruits = ["Banana", "Orange", "Apple", "Mango", "Apple"];
+let index = fruits.indexOf("Apple", 3);
+console.log(index)
+
+// .pop()
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.pop()
+console.log(fruits)
+// console.log(fruits.pop())
+// let removed = fruits.pop();
+// console.log(removed)
+
+// .slice()
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(1, 3);
+console.log(citrus)
+
+// .every()
+const ages = [32, 33, 16, 40];
+ages.every(checkAge);
+
+function checkAge(age){
+    return age > 18;
+}
+
+console.log(ages.every(checkAge))
+
+// .isArray()
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let result = Array.isArray(fruits);
+console.log(result)
+
+// .reverse()
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.reverse();
+console.log(fruits)
+
+// .some()
+const ages = [3, 10, 18, 20];
+
+function checkAdult(age) {
+    return age > 18;
+}
+ages.some(checkAdult);
+console.log(ages.some(checkAdult));
+
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){
+    return b-a
+});
+console.log(points)
+

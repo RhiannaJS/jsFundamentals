@@ -363,11 +363,28 @@ for(let i = 0; i <= 100; i++) {
     }
     
 
-    function isRightTriangle(a,b,c){
-        if(c**2 = a**2 + b**2){
-            return('True')
-        } else { return('False’)}
+    // function isRightTriangle(a,b,c){
+    //     if(c**2 = a**2 + b**2){
+    //         return('True')
+    //     } else { return('False’)}
         
-        isRightTriangle(3, 4, 25) 
-        isRightTriangle(3, 2, 25)
+    //     isRightTriangle(3, 4, 25) 
+    //     isRightTriangle(3, 2, 25)
         
+
+let bobsFollowers = ['Tom', 'Dick', 'Bill', 'Julie'];
+let tinasFollowers = ['Bill', 'April', 'Julie'];
+let mutualFollowers = [];
+
+for(let i=0; i < bobsFollowers.length; i++){
+    for(let x=0; x < tinasFollowers.length; x++){
+        if(bobsFollowers[i] === tinasFollowers[x]){
+            mutualFollowers.push(bobsFollowers[i]);
+            console.log(mutualFollowers)
+        }
+    }
+}
+console.log(mutualFollowers)
+
+
+
